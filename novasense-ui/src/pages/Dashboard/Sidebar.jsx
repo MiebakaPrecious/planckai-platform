@@ -21,6 +21,10 @@ const Sidebar = () => {
         <Link to="/payments" className="block text-lg hover:text-blue-600">
           Payments
         </Link>
+        <Link to="/train-model" className="block text-lg hover:text-blue-600">
+            Train Model
+        </Link>
+
       </nav>
 
       <button

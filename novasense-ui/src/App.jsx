@@ -4,6 +4,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+import TrainModel from "./pages/TrainModel/TrainModel";
 
 function App() {
   return (
@@ -15,6 +16,17 @@ function App() {
 
         {/* Protected Later */}
         <Route path="/dashboard" element={<Dashboard />} />
+
+        {/* Train Model Page Route */}
+        <Route
+          path="/train-model"
+          element={
+            <ProtectedRoute>
+              <TrainModel />
+            </ProtectedRoute>
+          }
+        />
+
       </Routes>
     </BrowserRouter>
   );
